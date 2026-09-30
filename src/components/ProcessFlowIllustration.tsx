@@ -59,27 +59,46 @@ export default function ProcessFlowIllustration() {
         {/* Linha 4 -> 3 */}
         <path d="M 230 400 L 290 400" stroke="url(#berra-line-grad)" strokeWidth="3" />
 
-        {/* Partículas fluindo nas linhas */}
-        <circle r="4" fill="#F58220" className="animate-ping">
-          <animateMotion
-            path="M 140 120 C 220 120, 220 220, 290 220"
-            dur="4s"
-            repeatCount="indefinite"
-          />
-        </circle>
-        <circle r="4" fill="#F58220">
-          <animateMotion
-            path="M 370 220 C 430 220, 430 330, 360 380"
-            dur="5s"
-            repeatCount="indefinite"
-          />
-        </circle>
+        {/* Partículas suaves fluindo pelas linhas (ponto que interliga o fluxo mantido) */}
+        <g>
+          {/* Ponto principal suave percorrendo o fluxo */}
+          <circle r="4.5" fill="#F58220">
+            <animateMotion
+              path="M 140 120 C 220 120, 220 220, 290 220"
+              dur="3.5s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          {/* Brilho suave acompanhando o ponto principal */}
+          <circle r="7" fill="#F58220" opacity="0.3">
+            <animateMotion
+              path="M 140 120 C 220 120, 220 220, 290 220"
+              dur="3.5s"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </g>
 
-        {/* NÓ 1: Mapeamento da Rotina Atual */}
-        <g
-          filter="url(#berra-shadow)"
-          className="transition-transform duration-300 hover:scale-105"
-        >
+        <g>
+          {/* Ponto suave no segundo segmento */}
+          <circle r="4.5" fill="#F58220">
+            <animateMotion
+              path="M 370 220 C 430 220, 430 330, 360 380"
+              dur="4s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle r="7" fill="#F58220" opacity="0.3">
+            <animateMotion
+              path="M 370 220 C 430 220, 430 330, 360 380"
+              dur="4s"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </g>
+
+        {/* NÓ 1: Mapeamento da Rotina Atual (renderização estável e fixa) */}
+        <g filter="url(#berra-shadow)">
           <rect
             x="50"
             y="90"
@@ -102,11 +121,8 @@ export default function ProcessFlowIllustration() {
           </text>
         </g>
 
-        {/* NÓ 2: Processo Otimizado (Central / Destaque Grafite & Laranja) */}
-        <g
-          filter="url(#berra-shadow)"
-          className="transition-transform duration-300 hover:scale-105"
-        >
+        {/* NÓ 2: Processo Otimizado (Central / Destaque Grafite & Laranja - estável) */}
+        <g filter="url(#berra-shadow)">
           <rect
             x="240"
             y="190"
@@ -134,7 +150,7 @@ export default function ProcessFlowIllustration() {
           <circle cx="375" cy="205" r="4" fill="#10B981" />
         </g>
 
-        {/* NÓ 4: Solução Web & Automação */}
+        {/* NÓ 4: Solução Web & Automação (estável) */}
         <g filter="url(#berra-shadow)">
           <rect
             x="70"
@@ -156,11 +172,8 @@ export default function ProcessFlowIllustration() {
           </text>
         </g>
 
-        {/* NÓ 3: Indicadores & Resultados */}
-        <g
-          filter="url(#berra-shadow)"
-          className="transition-transform duration-300 hover:scale-105"
-        >
+        {/* NÓ 3: Indicadores & Resultados (estável) */}
+        <g filter="url(#berra-shadow)">
           <rect
             x="290"
             y="360"
@@ -189,12 +202,8 @@ export default function ProcessFlowIllustration() {
           </text>
         </g>
 
-        {/* Badge Flutuante de Indicador */}
-        <g
-          filter="url(#berra-shadow)"
-          className="animate-bounce"
-          style={{ animationDuration: '4s' }}
-        >
+        {/* Badge Flutuante de Indicador (posição estável, sem animação brusca de bounce) */}
+        <g filter="url(#berra-shadow)">
           <rect
             x="315"
             y="70"
@@ -211,7 +220,7 @@ export default function ProcessFlowIllustration() {
           </text>
         </g>
 
-        {/* Badge Flutuante Inferior */}
+        {/* Badge Flutuante Inferior - Menos Burocracia (estável) */}
         <g filter="url(#berra-shadow)">
           <rect
             x="30"

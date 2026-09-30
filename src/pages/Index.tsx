@@ -114,9 +114,31 @@ export default function Index() {
         ========================================================= */}
         <section className="bg-white border-y border-[#E5E7EB] py-12 relative z-10 shadow-sm">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-[#E5E7EB]">
-              {/* Indicador 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-[#E5E7EB]">
+              {/* Indicador 1: Projetos Entregues */}
               <div className="text-center pt-4 lg:pt-0">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#F58220]">
+                  <AnimatedCounter end={120} suffix="+" />
+                </div>
+                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
+                  Projetos Entregues
+                </p>
+                <span className="text-[11px] text-neutral-500">Transformação de ponta a ponta</span>
+              </div>
+
+              {/* Indicador 2: Clientes Satisfeitos */}
+              <div className="text-center pt-4 lg:pt-0 lg:pl-8">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B2B2B]">
+                  <AnimatedCounter end={98} suffix="%" />
+                </div>
+                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
+                  Clientes Satisfeitos
+                </p>
+                <span className="text-[11px] text-neutral-500">Soluções aplicadas na rotina</span>
+              </div>
+
+              {/* Indicador 3: Anos de Experiência */}
+              <div className="text-center pt-4 lg:pt-0 lg:pl-8">
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B2B2B]">
                   <AnimatedCounter end={15} suffix="+" />
                 </div>
@@ -125,41 +147,6 @@ export default function Index() {
                 </p>
                 <span className="text-[11px] text-neutral-500">
                   Prática real em operações e gestão
-                </span>
-              </div>
-
-              {/* Indicador 2 */}
-              <div className="text-center pt-4 lg:pt-0 lg:pl-8">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#F58220]">
-                  <AnimatedCounter end={30} suffix="+" />
-                </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
-                  Grandes Projetos Concluídos
-                </p>
-                <span className="text-[11px] text-neutral-500">Transformação de ponta a ponta</span>
-              </div>
-
-              {/* Indicador 3 */}
-              <div className="text-center pt-4 lg:pt-0 lg:pl-8">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B2B2B]">
-                  <AnimatedCounter end={100} suffix="%" />
-                </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
-                  Foco em Resultado Real
-                </p>
-                <span className="text-[11px] text-neutral-500">Soluções aplicadas na rotina</span>
-              </div>
-
-              {/* Indicador 4 */}
-              <div className="text-center pt-4 lg:pt-0 lg:pl-8">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#10B981]">
-                  <AnimatedCounter end={3} prefix="" suffix="x" />
-                </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
-                  Ganho Operacional Típico
-                </p>
-                <span className="text-[11px] text-neutral-500">
-                  Economia e consistência de time
                 </span>
               </div>
             </div>

@@ -30,10 +30,7 @@ export default function BerraLogo({
   theme = 'light',
   variant = 'compact',
   className = '',
-  useImage = false,
 }: BerraLogoProps) {
-  const isDark = theme === 'dark'
-
   // Se variant for apenas o ícone
   if (variant === 'icon-only') {
     return (
@@ -43,89 +40,31 @@ export default function BerraLogo({
     )
   }
 
-  // Se for solicitado o uso direto da imagem oficial em fundo claro
-  if (useImage && !isDark && variant === 'full') {
+  // Uso EXATO do arquivo oficial do logotipo fornecido (logo-berra-e2410.png)
+  // Em fundos escuros (theme === 'dark', ex: rodapé escuro #2B2B2B), usamos uma base suave clara
+  // arredondada e acolchoada para garantir máxima legibilidade e preservação 100% fiel da arte oficial.
+  if (theme === 'dark') {
     return (
       <div className={`inline-flex items-center shrink-0 ${className}`}>
-        <img
-          src={logoFull}
-          alt="Berra - Análise e Otimização de Processos de Negócio"
-          className="h-10 w-auto object-contain"
-        />
+        <div className="bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg inline-flex items-center shadow-sm">
+          <img
+            src={logoFull}
+            alt="Berra - Análise e Otimização de Processos de Negócio"
+            className="h-8 md:h-9 w-auto max-w-[200px] object-contain select-none"
+          />
+        </div>
       </div>
     )
   }
 
-  // Renderização vetorial SVG de alta definição, fiel à tipografia e símbolo geométrico
-  // Símbolo: 4 losangos/quadrados inclinados laranja (#F58220) em disposição diagonal ascendente
-  // Wordmark: "Berra"
-  // Tagline: "ANÁLISE E OTIMIZAÇÃO DE PROCESSOS DE NEGÓCIO."
+  // Fundo claro padrão (Header, Login, Pipeline, Modais, etc.)
   return (
-    <div className={`inline-flex items-center gap-3 shrink-0 ${className}`}>
-      {/* Símbolo com os 4 tiles arredondados em diagonal ascendente */}
-      <svg
-        className="w-10 h-10 shrink-0 select-none"
-        viewBox="0 0 100 100"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        {/* Tile inferior esquerdo */}
-        <polygon
-          points="20,84 38,84 32,66 14,66"
-          fill="#F58220"
-          stroke="#F58220"
-          strokeWidth="3"
-          strokeLinejoin="round"
-        />
-        {/* Tile inferior central / médio */}
-        <polygon
-          points="40,68 62,68 56,46 34,46"
-          fill="#F58220"
-          stroke="#F58220"
-          strokeWidth="3"
-          strokeLinejoin="round"
-        />
-        {/* Tile intermediário superior */}
-        <polygon
-          points="18,52 38,52 32,32 12,32"
-          fill="#F58220"
-          stroke="#F58220"
-          strokeWidth="3"
-          strokeLinejoin="round"
-        />
-        {/* Tile superior direito alongado (asa ascendente) */}
-        <polygon
-          points="50,44 94,44 86,16 42,16"
-          fill="#F58220"
-          stroke="#F58220"
-          strokeWidth="4"
-          strokeLinejoin="round"
-        />
-      </svg>
-
-      {/* Wordmark e Tagline */}
-      <div className="flex flex-col justify-center leading-none">
-        <div className="flex items-baseline">
-          <span
-            className={`font-black tracking-tight text-2xl font-sans ${
-              isDark ? 'text-white' : 'text-[#2B2B2B]'
-            }`}
-            style={{ letterSpacing: '-0.02em' }}
-          >
-            Berra
-          </span>
-        </div>
-        {variant === 'full' && (
-          <span
-            className={`text-[9px] font-semibold tracking-wider uppercase mt-1 ${
-              isDark ? 'text-neutral-300' : 'text-[#666666]'
-            }`}
-          >
-            Análise e Otimização de Processos de Negócio
-          </span>
-        )}
-      </div>
+    <div className={`inline-flex items-center shrink-0 ${className}`}>
+      <img
+        src={logoFull}
+        alt="Berra - Análise e Otimização de Processos de Negócio"
+        className="h-9 md:h-10 w-auto max-w-[220px] object-contain select-none"
+      />
     </div>
   )
 }
