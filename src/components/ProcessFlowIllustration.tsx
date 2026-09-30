@@ -51,13 +51,13 @@ export default function ProcessFlowIllustration() {
         />
         {/* Linha 1 -> 4 */}
         <path
-          d="M 140 150 C 140 260, 180 320, 190 380"
+          d="M 140 150 C 140 260, 160 320, 160 360"
           stroke="#F58220"
           strokeWidth="2.5"
           strokeOpacity="0.5"
         />
         {/* Linha 4 -> 3 */}
-        <path d="M 230 400 L 290 400" stroke="url(#berra-line-grad)" strokeWidth="3" />
+        <path d="M 240 392 L 285 392" stroke="url(#berra-line-grad)" strokeWidth="3" />
 
         {/* Partículas suaves fluindo pelas linhas (ponto que interliga o fluxo mantido) */}
         <g>
@@ -100,23 +100,23 @@ export default function ProcessFlowIllustration() {
         {/* NÓ 1: Mapeamento da Rotina Atual (renderização estável e fixa) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="50"
+            x="44"
             y="90"
-            width="145"
+            width="155"
             height="64"
             rx="12"
             fill="white"
             stroke="#E5E7EB"
             strokeWidth="1.5"
           />
-          <rect x="64" y="106" width="30" height="30" rx="8" fill="#FFF7ED" />
+          <rect x="58" y="106" width="30" height="30" rx="8" fill="#FFF7ED" />
           {/* Lupa em laranja */}
-          <circle cx="77" cy="119" r="5" stroke="#F58220" strokeWidth="2" fill="none" />
-          <line x1="81" y1="123" x2="86" y2="128" stroke="#F58220" strokeWidth="2" />
-          <text x="104" y="118" fill="#2B2B2B" fontSize="12" fontWeight="700">
+          <circle cx="71" cy="119" r="5" stroke="#F58220" strokeWidth="2" fill="none" />
+          <line x1="75" y1="123" x2="80" y2="128" stroke="#F58220" strokeWidth="2" />
+          <text x="98" y="118" fill="#2B2B2B" fontSize="12" fontWeight="700">
             Mapeamento
           </text>
-          <text x="104" y="132" fill="#52525B" fontSize="10">
+          <text x="98" y="132" fill="#52525B" fontSize="10">
             Rotina Atual
           </text>
         </g>
@@ -124,50 +124,50 @@ export default function ProcessFlowIllustration() {
         {/* NÓ 2: Processo Otimizado (Central / Destaque Grafite & Laranja - estável) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="240"
+            x="235"
             y="190"
-            width="155"
+            width="165"
             height="70"
             rx="14"
             fill="url(#berra-grad-dark)"
             stroke="#F58220"
             strokeWidth="2"
           />
-          <circle cx="265" cy="225" r="16" fill="#1E1E1E" />
+          <circle cx="260" cy="225" r="16" fill="#1E1E1E" />
           {/* Símbolo de engrenagem / fluidez */}
           <path
-            d="M 261 225 L 269 225 M 265 221 L 265 229"
+            d="M 256 225 L 264 225 M 260 221 L 260 229"
             stroke="#F58220"
             strokeWidth="2.5"
             strokeLinecap="round"
           />
-          <text x="292" y="218" fill="#FFFFFF" fontSize="13" fontWeight="800">
+          <text x="286" y="218" fill="#FFFFFF" fontSize="13" fontWeight="800">
             Otimização
           </text>
-          <text x="292" y="234" fill="#FF9E4A" fontSize="10">
+          <text x="286" y="234" fill="#FF9E4A" fontSize="10">
             Processo Ideal
           </text>
-          <circle cx="375" cy="205" r="4" fill="#10B981" />
+          <circle cx="382" cy="205" r="4" fill="#10B981" />
         </g>
 
-        {/* NÓ 4: Solução Web & Automação (estável) */}
+        {/* NÓ 4: Solução Web & ERP (estável) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="70"
+            x="50"
             y="360"
-            width="160"
+            width="190"
             height="64"
             rx="12"
             fill="white"
             stroke="#E5E7EB"
             strokeWidth="1.5"
           />
-          <rect x="84" y="376" width="30" height="30" rx="8" fill="#FFF7ED" />
-          <circle cx="99" cy="391" r="6" stroke="#F58220" strokeWidth="2" fill="none" />
-          <text x="124" y="388" fill="#2B2B2B" fontSize="12" fontWeight="700">
+          <rect x="62" y="376" width="30" height="30" rx="8" fill="#FFF7ED" />
+          <circle cx="77" cy="391" r="6" stroke="#F58220" strokeWidth="2" fill="none" />
+          <text x="100" y="388" fill="#2B2B2B" fontSize="12" fontWeight="700">
             Solução Web & ERP
           </text>
-          <text x="124" y="402" fill="#52525B" fontSize="10">
+          <text x="100" y="402" fill="#52525B" fontSize="10">
             Rotinas Integradas
           </text>
         </g>
@@ -175,29 +175,29 @@ export default function ProcessFlowIllustration() {
         {/* NÓ 3: Indicadores & Resultados (estável) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="290"
+            x="285"
             y="360"
-            width="155"
+            width="168"
             height="66"
             rx="12"
             fill="white"
             stroke="#10B981"
             strokeWidth="2"
           />
-          <rect x="304" y="377" width="32" height="32" rx="8" fill="#ECFDF5" />
+          <rect x="297" y="377" width="32" height="32" rx="8" fill="#ECFDF5" />
           {/* Check / seta de subida */}
           <path
-            d="M 312 396 L 318 401 L 328 387"
+            d="M 305 396 L 311 401 L 321 387"
             fill="none"
             stroke="#10B981"
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <text x="346" y="389" fill="#2B2B2B" fontSize="13" fontWeight="700">
+          <text x="339" y="389" fill="#2B2B2B" fontSize="13" fontWeight="700">
             Medição Real
           </text>
-          <text x="346" y="403" fill="#10B981" fontSize="11" fontWeight="600">
+          <text x="339" y="403" fill="#10B981" fontSize="11" fontWeight="600">
             + Eficiência e Clareza
           </text>
         </g>
@@ -205,17 +205,17 @@ export default function ProcessFlowIllustration() {
         {/* Badge Flutuante de Indicador (posição estável, sem animação brusca de bounce) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="315"
+            x="310"
             y="70"
-            width="135"
+            width="145"
             height="36"
             rx="18"
             fill="#2B2B2B"
             stroke="#F58220"
             strokeWidth="1.5"
           />
-          <circle cx="332" cy="88" r="5" fill="#F58220" />
-          <text x="344" y="92" fill="#FFFFFF" fontSize="10" fontWeight="600">
+          <circle cx="327" cy="88" r="5" fill="#F58220" />
+          <text x="339" y="92" fill="#FFFFFF" fontSize="10.5" fontWeight="600">
             Processos Claros
           </text>
         </g>
@@ -223,17 +223,17 @@ export default function ProcessFlowIllustration() {
         {/* Badge Flutuante Inferior - Menos Burocracia (estável) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="30"
+            x="24"
             y="250"
-            width="125"
+            width="135"
             height="32"
             rx="16"
             fill="#FFFFFF"
             stroke="#E5E7EB"
             strokeWidth="1"
           />
-          <circle cx="44" cy="266" r="4" fill="#F58220" />
-          <text x="54" y="270" fill="#2B2B2B" fontSize="10" fontWeight="600">
+          <circle cx="38" cy="266" r="4" fill="#F58220" />
+          <text x="48" y="270" fill="#2B2B2B" fontSize="10.5" fontWeight="600">
             Menos Burocracia
           </text>
         </g>
