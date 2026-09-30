@@ -39,8 +39,7 @@ export default function LeadCard({
   onDelete,
   onDragStart,
 }: LeadCardProps) {
-  const statusColor = STATUS_COLORS[lead.status]?.border || '#00B4D8'
-
+  const statusColor = STATUS_COLORS[lead.status]?.border || '#F58220'
   const formattedDate = new Date(lead.created).toLocaleDateString('pt-BR', {
     day: '2-digit',
     month: 'short',
@@ -66,11 +65,11 @@ export default function LeadCard({
     >
       <div className="flex items-start justify-between gap-2 mb-2">
         <div>
-          <h4 className="text-sm font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors leading-snug">
+          <h4 className="text-sm font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors leading-snug">
             {lead.name}
           </h4>
-          <div className="flex items-center gap-1.5 mt-0.5 text-xs text-[#5B6B7C]">
-            <Briefcase className="w-3 h-3 text-[#00B4D8] shrink-0" />
+          <div className="flex items-center gap-1.5 mt-0.5 text-xs text-[#52525B]">
+            <Briefcase className="w-3 h-3 text-[#F58220] shrink-0" />
             <span className="font-medium truncate max-w-[150px]">{lead.segment}</span>
           </div>
         </div>
@@ -90,7 +89,7 @@ export default function LeadCard({
                   onClick={() => onMoveToNext(lead.id, lead.status)}
                   className="text-xs font-medium text-[#0F2A43] flex items-center gap-2 cursor-pointer hover:bg-[#F5F7FA]"
                 >
-                  <ArrowRightCircle className="w-3.5 h-3.5 text-[#00B4D8]" />
+                  <ArrowRightCircle className="w-3.5 h-3.5 text-[#F58220]" />
                   <span>Avançar para: {nextStatus}</span>
                 </DropdownMenuItem>
               )}
@@ -124,7 +123,7 @@ export default function LeadCard({
                 onClick={() => onSelect(lead)}
                 className="text-xs font-medium text-[#0F2A43] flex items-center gap-2 cursor-pointer hover:bg-[#F5F7FA]"
               >
-                <Edit className="w-3.5 h-3.5 text-[#00B4D8]" />
+                <Edit className="w-3.5 h-3.5 text-[#F58220]" />
                 <span>Editar Detalhes</span>
               </DropdownMenuItem>
 

@@ -225,11 +225,11 @@ export default function NewLeadModal({ isOpen, onClose, onSubmit }: NewLeadModal
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-[#0F2A43] hover:bg-[#0A1F33] transition-all disabled:opacity-60"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] transition-all disabled:opacity-60"
             >
               {submitting ? (
                 <>
-                  <Loader2 className="w-4 h-4 animate-spin text-[#00B4D8]" />
+                  <Loader2 className="w-4 h-4 animate-spin text-white" />
                   <span>Salvando...</span>
                 </>
               ) : (

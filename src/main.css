@@ -8,58 +8,61 @@
 
 @layer base {
   :root {
-    /* Paleta solicitada:
-       Primária #0F2A43 (azul petróleo profundo)
-       Hover primário #0A1F33
-       Destaque ciano #00B4D8
-       Fundo claro #F5F7FA
+    /* Paleta Oficial Berra:
+       Primária Laranja #F58220 (HSL 28 91% 54%)
+       Hover Primário #E06F12
+       Grafite Sóbrio / Escuro #2B2B2B (HSL 0 0% 17%)
+       Grafite Profundo #1E1E1E
+       Fundo claro #FAFAFA / #F5F7FA
        Branco #FFFFFF
-       Bordas/divisórias #E4E9F0
-       Texto primário #1A2B3C
-       Texto secundário #5B6B7C
-       Sucesso #00A86B
+       Bordas/divisórias #E5E7EB
+       Texto primário #2B2B2B / #1F2937
+       Texto secundário #52525B
+       Sucesso #10B981
        Atenção #F59E0B
        Erro #EF4444
     */
-    --background: 216 28% 97%; /* #F5F7FA */
-    --foreground: 211 40% 17%; /* #1A2B3C */
+    --background: 0 0% 98%; /* #FAFAFA */
+    --foreground: 0 0% 17%; /* #2B2B2B */
 
     --card: 0 0% 100%;
-    --card-foreground: 211 40% 17%;
+    --card-foreground: 0 0% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 211 40% 17%;
+    --popover-foreground: 0 0% 17%;
 
-    --primary: 209 63% 16%; /* #0F2A43 */
+    --primary: 28 91% 54%; /* #F58220 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 213 27% 92%; /* #E4E9F0 */
-    --secondary-foreground: 209 63% 16%;
+    --secondary: 0 0% 95%; /* #F4F4F5 */
+    --secondary-foreground: 0 0% 17%;
 
-    --muted: 216 20% 92%;
-    --muted-foreground: 211 15% 42%; /* #5B6B7C */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%; /* #666666 */
 
-    --accent: 191 100% 42%; /* #00B4D8 */
+    --accent: 28 91% 54%; /* #F58220 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%; /* #EF4444 */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 26% 92%; /* #E4E9F0 */
-    --input: 214 26% 92%;
-    --ring: 191 100% 42%; /* #00B4D8 */
+    --border: 0 0% 90%; /* #E5E7EB */
+    --input: 0 0% 90%;
+    --ring: 28 91% 54%; /* #F58220 */
 
     --radius: 0.5rem;
 
-    --brand-primary: #0f2a43;
-    --brand-primary-hover: #0a1f33;
-    --brand-cyan: #00b4d8;
-    --brand-cyan-hover: #0096b4;
-    --brand-bg: #f5f7fa;
-    --brand-border: #e4e9f0;
-    --brand-text: #1a2b3c;
-    --brand-text-muted: #5b6b7c;
-    --brand-success: #00a86b;
+    --brand-primary: #f58220;
+    --brand-primary-hover: #e06f12;
+    --brand-dark: #2b2b2b;
+    --brand-dark-hover: #1e1e1e;
+    --brand-accent: #f58220;
+    --brand-accent-hover: #d97017;
+    --brand-bg: #f8f9fa;
+    --brand-border: #e5e7eb;
+    --brand-text: #2b2b2b;
+    --brand-text-muted: #52525b;
+    --brand-success: #10b981;
     --brand-warning: #f59e0b;
     --brand-danger: #ef4444;
   }

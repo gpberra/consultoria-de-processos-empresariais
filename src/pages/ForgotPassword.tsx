@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useAuth } from '@/context/AuthContext'
 import { isValidEmail } from '@/lib/formatters'
 import { Mail, ArrowLeft, Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
+import BerraLogo from '@/components/BerraLogo'
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('')
@@ -36,19 +37,9 @@ export default function ForgotPassword() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-[#F5F7FA] px-4 py-12">
-      {/* Logotipo */}
+      {/* Logotipo Berra */}
       <Link to="/" className="flex items-center gap-3 mb-8 group">
-        <div className="w-11 h-11 rounded-xl bg-[#0F2A43] flex items-center justify-center text-white font-bold text-2xl shadow-md group-hover:bg-[#0A1F33] transition-colors">
-          <span className="text-[#00B4D8]">V</span>P
-        </div>
-        <div className="flex flex-col">
-          <span className="font-extrabold text-xl tracking-tight text-[#0F2A43] leading-none">
-            Vértice <span className="text-[#00B4D8]">Processos</span>
-          </span>
-          <span className="text-[11px] font-medium text-[#5B6B7C] tracking-wider uppercase mt-0.5">
-            Recuperação de Acesso
-          </span>
-        </div>
+        <BerraLogo theme="light" variant="full" />
       </Link>
 
       <div className="w-full max-w-md bg-white rounded-2xl border border-[#E4E9F0] shadow-xl p-8 sm:p-10">
@@ -105,7 +96,7 @@ export default function ForgotPassword() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="exemplo@verticeprocessos.com.br"
+                    placeholder="contato@berra.com.br"
                     className="w-full pl-10 pr-4 py-3 rounded-lg text-sm border border-[#E4E9F0] bg-[#F5F7FA] text-[#1A2B3C] placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#00B4D8] transition-all"
                     required
                   />
@@ -115,7 +106,7 @@ export default function ForgotPassword() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white bg-[#0F2A43] hover:bg-[#0A1F33] transition-all shadow-md disabled:opacity-60"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] transition-all shadow-md shadow-[#F58220]/20 disabled:opacity-60"
               >
                 {loading ? (
                   <>

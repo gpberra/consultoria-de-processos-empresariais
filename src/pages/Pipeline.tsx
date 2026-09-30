@@ -19,6 +19,7 @@ import {
   ChevronUp,
   User as UserIcon,
 } from 'lucide-react'
+import BerraLogo from '@/components/BerraLogo'
 
 export default function Pipeline() {
   const { user, logout } = useAuth()
@@ -241,19 +242,14 @@ export default function Pipeline() {
           {/* Logo e Título */}
           <div className="flex items-center gap-4">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-[#0F2A43] flex items-center justify-center text-white font-bold text-sm shadow">
-                <span className="text-[#00B4D8]">V</span>P
-              </div>
-              <span className="hidden sm:inline font-extrabold text-sm tracking-tight text-[#0F2A43]">
-                Vértice <span className="text-[#00B4D8]">Processos</span>
-              </span>
+              <BerraLogo theme="light" variant="compact" />
             </Link>
 
-            <span className="h-5 w-px bg-[#E4E9F0]" />
+            <span className="h-5 w-px bg-[#E5E7EB]" />
 
             <div className="flex items-center gap-2">
-              <KanbanIcon className="w-5 h-5 text-[#00B4D8]" />
-              <h1 className="text-base sm:text-lg font-extrabold text-[#0F2A43] tracking-tight">
+              <KanbanIcon className="w-5 h-5 text-[#F58220]" />
+              <h1 className="text-base sm:text-lg font-extrabold text-[#2B2B2B] tracking-tight">
                 Pipeline de Leads
               </h1>
             </div>
@@ -264,17 +260,17 @@ export default function Pipeline() {
             <button
               type="button"
               onClick={() => setIsNewLeadOpen(true)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold text-white bg-[#0F2A43] hover:bg-[#0A1F33] transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] transition-all shadow-sm"
             >
-              <Plus className="w-4 h-4 text-[#00B4D8]" />
+              <Plus className="w-4 h-4 text-white" />
               <span className="hidden sm:inline">Novo Lead</span>
               <span className="sm:hidden">Novo</span>
             </button>
 
-            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F5F7FA] border border-[#E4E9F0] text-xs text-[#5B6B7C]">
-              <UserIcon className="w-3.5 h-3.5 text-[#00B4D8]" />
+            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F8F9FA] border border-[#E5E7EB] text-xs text-[#52525B]">
+              <UserIcon className="w-3.5 h-3.5 text-[#F58220]" />
               <span className="font-medium truncate max-w-[140px]">
-                {user?.name || user?.email || 'Consultor'}
+                {user?.name || user?.email || 'Giovani Berra'}
               </span>
             </div>
 
@@ -374,7 +370,7 @@ export default function Pipeline() {
                 onDrop={(e) => handleDrop(e, status)}
                 className={`flex-1 min-w-[240px] max-w-[280px] bg-[#F0F3F7] rounded-xl border flex flex-col max-h-[calc(100vh-210px)] transition-colors duration-150 ${
                   isColumnTarget
-                    ? 'border-[#00B4D8] bg-[#E1F3F8]/50 ring-2 ring-[#00B4D8]/30'
+                    ? 'border-[#F58220] bg-orange-50/50 ring-2 ring-[#F58220]/30'
                     : 'border-[#E4E9F0]'
                 }`}
               >
@@ -383,7 +379,7 @@ export default function Pipeline() {
                   <div className="flex items-center gap-2">
                     <span
                       className="w-2.5 h-2.5 rounded-full"
-                      style={{ backgroundColor: STATUS_COLORS[status]?.border || '#00B4D8' }}
+                      style={{ backgroundColor: STATUS_COLORS[status]?.border || '#F58220' }}
                     />
                     <h3 className="text-xs font-bold uppercase tracking-wider text-[#0F2A43]">
                       {status}
@@ -438,7 +434,7 @@ export default function Pipeline() {
                   <div className="flex items-center gap-2.5">
                     <span
                       className="w-2.5 h-2.5 rounded-full"
-                      style={{ backgroundColor: STATUS_COLORS[status]?.border || '#00B4D8' }}
+                      style={{ backgroundColor: STATUS_COLORS[status]?.border || '#F58220' }}
                     />
                     <span className="text-sm font-bold text-[#0F2A43]">{status}</span>
                   </div>

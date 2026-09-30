@@ -4,16 +4,16 @@ import {
   Zap,
   BarChart3,
   Bot,
-  Kanban,
-  GraduationCap,
+  Globe,
+  Database,
   ArrowRight,
   CheckCircle2,
-  Star,
-  Quote,
-  Target,
   FileCheck,
   TrendingUp,
-  Award,
+  Compass,
+  GraduationCap,
+  Sparkles,
+  ExternalLink,
 } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -23,7 +23,7 @@ import LeadCaptureForm from '@/components/LeadCaptureForm'
 
 export default function Index() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#F5F7FA]">
+    <div className="flex flex-col min-h-screen bg-[#F8F9FA]">
       <Header />
 
       <main className="flex-1">
@@ -32,73 +32,72 @@ export default function Index() {
         ========================================================= */}
         <section
           id="inicio"
-          className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0F2A43] via-[#123657] to-[#0A1F33] text-white py-16 lg:py-0"
+          className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2B2B2B] via-[#242424] to-[#191919] text-white py-16 lg:py-0"
         >
-          {/* Grade de fundo tecnológica em baixa opacidade */}
+          {/* Grade de fundo tecnológica sóbria */}
           <div
-            className="absolute inset-0 opacity-[0.07] pointer-events-none"
+            className="absolute inset-0 opacity-[0.06] pointer-events-none"
             style={{
               backgroundImage:
-                'linear-gradient(#00B4D8 1px, transparent 1px), linear-gradient(90deg, #00B4D8 1px, transparent 1px)',
+                'linear-gradient(#F58220 1px, transparent 1px), linear-gradient(90deg, #F58220 1px, transparent 1px)',
               backgroundSize: '48px 48px',
             }}
           />
 
-          {/* Gradiente animado suave de iluminação */}
-          <div className="absolute top-1/4 left-10 w-96 h-96 bg-[#00B4D8]/15 rounded-full blur-3xl pointer-events-none animate-pulse-subtle" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#0F2A43]/40 rounded-full blur-3xl pointer-events-none" />
+          {/* Gradiente sutil de iluminação laranja */}
+          <div className="absolute top-1/4 left-10 w-96 h-96 bg-[#F58220]/15 rounded-full blur-3xl pointer-events-none animate-pulse-subtle" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#F58220]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-[1200px] w-full mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Coluna de Texto (Hero) */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-[#00B4D8]/30 text-xs font-semibold text-[#00B4D8] backdrop-blur-sm">
-                <span className="w-2 h-2 rounded-full bg-[#00B4D8] animate-ping" />
-                Excelência Operacional & BPMN
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-[#F58220]/40 text-xs font-semibold text-orange-400 backdrop-blur-sm">
+                <span className="w-2 h-2 rounded-full bg-[#F58220] animate-ping" />
+                Análise e Otimização de Processos de Negócio
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
-                Consultoria em{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-[#00B4D8]">
-                  Processos Empresariais
-                </span>{' '}
-                que Impulsiona Resultados.
+                Processos claros, eficientes e prontos para o{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-300 to-[#F58220]">
+                  crescimento do seu negócio.
+                </span>
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                Estruture, otimize e transforme a gestão da sua empresa com metodologias
-                comprovadas. Eliminamos gargalos, automatizamos fluxos e construímos indicadores
-                para decisões precisas.
+              <p className="text-base sm:text-lg text-neutral-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                Análise e otimização de processos de negócio com consultores, analistas e
+                desenvolvedores que unem visão prática e tecnologia. Enxergamos como o trabalho
+                funciona hoje, eliminamos perdas e tornamos sua operação ágil e escalável.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <a
                   href="#contato"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-[#00B4D8] hover:bg-[#0096B4] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-[#00B4D8]/20"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-[#F58220]/25"
                 >
-                  Solicitar Diagnóstico Gratuito
+                  Agende uma Consulta
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
                 <a
                   href="#servicos"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-white/5 border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all"
                 >
-                  Conhecer Nossos Serviços
+                  Conheça Nossas Áreas
                 </a>
               </div>
 
               {/* Destaques rápidos no rodapé do hero */}
-              <div className="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 text-xs text-slate-300">
+              <div className="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 text-xs text-neutral-300">
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B4D8] shrink-0" />
-                  <span>Diagnóstico sem custo</span>
+                  <CheckCircle2 className="w-4 h-4 text-[#F58220] shrink-0" />
+                  <span>Diagnóstico prático</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B4D8] shrink-0" />
-                  <span>Método Lean Six Sigma</span>
+                  <CheckCircle2 className="w-4 h-4 text-[#F58220] shrink-0" />
+                  <span>Sem jargões vazios</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center lg:justify-start">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B4D8] shrink-0" />
-                  <span>Suporte contínuo</span>
+                  <CheckCircle2 className="w-4 h-4 text-[#F58220] shrink-0" />
+                  <span>Tecnologia sob medida</span>
                 </div>
               </div>
             </div>
@@ -113,151 +112,177 @@ export default function Index() {
         {/* =========================================================
             SEÇÃO 2: MÉTRICAS (INDICADORES ANIMADOS)
         ========================================================= */}
-        <section className="bg-white border-y border-[#E4E9F0] py-12 relative z-10 shadow-sm">
+        <section className="bg-white border-y border-[#E5E7EB] py-12 relative z-10 shadow-sm">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-[#E4E9F0]">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-[#E5E7EB]">
               {/* Indicador 1 */}
               <div className="text-center pt-4 lg:pt-0">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F2A43]">
-                  <AnimatedCounter end={120} suffix="+" />
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B2B2B]">
+                  <AnimatedCounter end={15} suffix="+" />
                 </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#5B6B7C]">
-                  Projetos Entregues
+                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
+                  Anos de Experiência
                 </p>
-                <span className="text-[11px] text-slate-400">
-                  Em empresas de médio e grande porte
+                <span className="text-[11px] text-neutral-500">
+                  Prática real em operações e gestão
                 </span>
               </div>
 
               {/* Indicador 2 */}
               <div className="text-center pt-4 lg:pt-0 lg:pl-8">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#00B4D8]">
-                  <AnimatedCounter end={98} suffix="%" />
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#F58220]">
+                  <AnimatedCounter end={30} suffix="+" />
                 </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#5B6B7C]">
-                  Clientes Satisfeitos
+                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
+                  Grandes Projetos Concluídos
                 </p>
-                <span className="text-[11px] text-slate-400">Aprovação comprovada por NPS</span>
+                <span className="text-[11px] text-neutral-500">Transformação de ponta a ponta</span>
               </div>
 
               {/* Indicador 3 */}
               <div className="text-center pt-4 lg:pt-0 lg:pl-8">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F2A43]">
-                  <AnimatedCounter end={15} suffix="+" />
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B2B2B]">
+                  <AnimatedCounter end={100} suffix="%" />
                 </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#5B6B7C]">
-                  Anos de Experiência
+                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
+                  Foco em Resultado Real
                 </p>
-                <span className="text-[11px] text-slate-400">Atuação consolidada no mercado</span>
+                <span className="text-[11px] text-neutral-500">Soluções aplicadas na rotina</span>
               </div>
 
               {/* Indicador 4 */}
               <div className="text-center pt-4 lg:pt-0 lg:pl-8">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#00A86B]">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#10B981]">
                   <AnimatedCounter end={3} prefix="" suffix="x" />
                 </div>
-                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#5B6B7C]">
-                  Retorno Médio (ROI)
+                <p className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#52525B]">
+                  Ganho Operacional Típico
                 </p>
-                <span className="text-[11px] text-slate-400">Economia e ganhos operacionais</span>
+                <span className="text-[11px] text-neutral-500">
+                  Economia e consistência de time
+                </span>
               </div>
             </div>
           </div>
         </section>
 
         {/* =========================================================
-            SEÇÃO 3: SOBRE (id="sobre")
+            SEÇÃO 3: SOBRE A BERRA (id="sobre")
         ========================================================= */}
-        <section id="sobre" className="py-20 lg:py-28 bg-[#F5F7FA]">
+        <section id="sobre" className="py-20 lg:py-28 bg-[#F8F9FA]">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              {/* Coluna Texto */}
+              {/* Coluna Texto: Essência da Berra */}
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-xs font-bold uppercase tracking-wider text-[#00B4D8] border border-blue-100">
-                  Quem Somos
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-xs font-bold uppercase tracking-wider text-[#F58220] border border-orange-200">
+                  Nossa Essência
                 </div>
-                <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0F2A43] leading-tight">
-                  Estratégia e Execução para a Excelência Operacional
+                <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B] leading-tight">
+                  Sobre a Berra
                 </h2>
-                <p className="text-base text-[#5B6B7C] leading-relaxed">
-                  Na <strong>Vértice Processos</strong>, acreditamos que empresas de alto
-                  crescimento não podem depender de processos manuais, silos de comunicação ou
-                  decisões baseadas em intuição.
+                <p className="text-base text-[#52525B] leading-relaxed">
+                  A <strong>Berra</strong> nasce da experiência prática de mais de 15 anos em
+                  operações e gestão. Somos uma equipe de consultores, analistas e desenvolvedores
+                  que <strong>entende o negócio antes de propor tecnologia</strong>.
                 </p>
-                <p className="text-base text-[#5B6B7C] leading-relaxed">
-                  Nossa missão é diagnosticar as ineficiências ocultas da sua cadeia de valor,
-                  redesenhar fluxos críticos segundo padrões mundiais (BPMN e Lean) e implementar
-                  tecnologias que aumentam a produtividade da sua equipe enquanto reduzem custos
-                  operacionais.
+                <p className="text-base text-[#52525B] leading-relaxed">
+                  Nosso trabalho é enxergar como a empresa realmente funciona, identificar onde o
+                  tempo e o dinheiro se perdem e transformar processos em algo claro, controlável e
+                  automatizável. Acreditamos em soluções simples para problemas reais, com foco em
+                  resultado que se sustenta no dia a dia.
                 </p>
 
-                {/* 3 pilares da abordagem */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-                  <div className="p-4 rounded-xl bg-white border border-[#E4E9F0] shadow-sm">
-                    <Target className="w-6 h-6 text-[#00B4D8] mb-2" />
-                    <h4 className="text-sm font-bold text-[#0F2A43]">Foco em Resultado</h4>
-                    <p className="text-xs text-[#5B6B7C] mt-1">
-                      Metas claras de redução de tempo e despesas.
-                    </p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-white border border-[#E4E9F0] shadow-sm">
-                    <FileCheck className="w-6 h-6 text-[#00B4D8] mb-2" />
-                    <h4 className="text-sm font-bold text-[#0F2A43]">Padronização Ágil</h4>
-                    <p className="text-xs text-[#5B6B7C] mt-1">
-                      Processos claros e auditáveis para todos.
-                    </p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-white border border-[#E4E9F0] shadow-sm">
-                    <TrendingUp className="w-6 h-6 text-[#00B4D8] mb-2" />
-                    <h4 className="text-sm font-bold text-[#0F2A43]">Escala Sustentável</h4>
-                    <p className="text-xs text-[#5B6B7C] mt-1">
-                      A sua empresa cresce sem multiplicar o caos.
-                    </p>
+                {/* Princípios que guiam nossa atuação (conforme berra.com.br) */}
+                <div className="pt-2">
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-[#2B2B2B] mb-3">
+                    Princípios que guiam nossa atuação
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div className="p-4 rounded-xl bg-white border border-[#E5E7EB] shadow-sm hover:border-[#F58220]/40 transition-colors">
+                      <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#F58220] flex items-center justify-center mb-3">
+                        <Compass className="w-5 h-5" />
+                      </div>
+                      <h4 className="text-sm font-bold text-[#2B2B2B]">Clareza</h4>
+                      <p className="text-xs text-[#52525B] mt-1.5 leading-relaxed">
+                        Mapeamentos transparentes e linguagens diretas, para que toda a empresa
+                        compreenda e execute sem ruídos.
+                      </p>
+                    </div>
+
+                    <div className="p-4 rounded-xl bg-white border border-[#E5E7EB] shadow-sm hover:border-[#F58220]/40 transition-colors">
+                      <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#F58220] flex items-center justify-center mb-3">
+                        <FileCheck className="w-5 h-5" />
+                      </div>
+                      <h4 className="text-sm font-bold text-[#2B2B2B]">Praticidade</h4>
+                      <p className="text-xs text-[#52525B] mt-1.5 leading-relaxed">
+                        Soluções funcionais desenhadas para a rotina do time, eliminando excessos
+                        burocráticos e complexidade vazia.
+                      </p>
+                    </div>
+
+                    <div className="p-4 rounded-xl bg-white border border-[#E5E7EB] shadow-sm hover:border-[#F58220]/40 transition-colors">
+                      <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#F58220] flex items-center justify-center mb-3">
+                        <TrendingUp className="w-5 h-5" />
+                      </div>
+                      <h4 className="text-sm font-bold text-[#2B2B2B]">Foco em Resultado</h4>
+                      <p className="text-xs text-[#52525B] mt-1.5 leading-relaxed">
+                        Cada redesenho e automação é orientado para ganho de produtividade, redução
+                        de custos e consistência operacional.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Coluna Card do Consultor Principal */}
+              {/* Coluna Card do Consultor Giovani Berra */}
               <div className="lg:col-span-5">
-                <div className="bg-white rounded-2xl border border-[#E4E9F0] p-6 shadow-xl relative overflow-hidden group">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#00B4D8]/10 rounded-bl-full pointer-events-none" />
+                <div className="bg-white rounded-2xl border border-[#E5E7EB] p-7 shadow-xl relative overflow-hidden group">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#F58220]/10 rounded-bl-full pointer-events-none" />
 
                   <div className="flex flex-col sm:flex-row items-center gap-5">
                     <img
-                      src="https://img.usecurling.com/ppl/medium?gender=male&seed=42"
-                      alt="Dr. Roberto Guimarães - Consultor Principal"
-                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shadow-md border-2 border-white ring-2 ring-[#00B4D8]/20 shrink-0"
+                      src="https://img-c.udemycdn.com/user/200_H/297522989_7341.jpg"
+                      alt="Giovani Pan Berra - Consultor de Processos e Tecnologia"
+                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shadow-md border-2 border-white ring-2 ring-[#F58220]/30 shrink-0"
                     />
                     <div className="text-center sm:text-left">
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#00B4D8]">
-                        Liderança Técnica
+                      <span className="text-xs font-bold uppercase tracking-wider text-[#F58220]">
+                        Fundador & Consultor Especialista
                       </span>
-                      <h3 className="text-xl font-bold text-[#0F2A43] mt-0.5">Roberto Guimarães</h3>
-                      <p className="text-xs text-[#5B6B7C]">
-                        Sócio-fundador & Master Black Belt Six Sigma
+                      <h3 className="text-xl font-bold text-[#2B2B2B] mt-0.5">Giovani Pan Berra</h3>
+                      <p className="text-xs text-[#52525B] mt-0.5">
+                        Consultor Empresarial de Processos & Administrador de Empresas
                       </p>
-                      <div className="flex items-center justify-center sm:justify-start gap-1 mt-2 text-amber-500">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
-                        ))}
-                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/giovaniberra/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-[#F58220] hover:underline"
+                      >
+                        Perfil no LinkedIn <ExternalLink className="w-3 h-3" />
+                      </a>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-5 border-t border-[#E4E9F0] space-y-3">
-                    <p className="text-xs text-[#5B6B7C] leading-relaxed italic">
-                      “Processos eficientes não engessam sua empresa; pelo contrário, criam a
-                      previsibilidade necessária para que sua equipe inove com rapidez e segurança.”
+                  <div className="mt-6 pt-5 border-t border-[#E5E7EB] space-y-3">
+                    <p className="text-xs text-[#52525B] leading-relaxed">
+                      Profissional certificado com mais de 15 anos de atuação prática em gestão e
+                      operações. Atuou como delegado regional da associação internacional de
+                      profissionais de processos e já liderou mais de 30 grandes projetos de
+                      otimização de rotinas, integração de sistemas e tecnologia analítica.
                     </p>
-                    <div className="flex flex-wrap gap-2 pt-1 text-[11px] font-medium text-[#0F2A43]">
-                      <span className="px-2.5 py-1 rounded bg-[#F5F7FA] border border-[#E4E9F0]">
-                        BPMN 2.0 Certified
+                    <div className="flex flex-wrap gap-2 pt-1 text-[11px] font-medium text-[#2B2B2B]">
+                      <span className="px-2.5 py-1 rounded bg-[#F8F9FA] border border-[#E5E7EB]">
+                        +15 Anos em Operações
                       </span>
-                      <span className="px-2.5 py-1 rounded bg-[#F5F7FA] border border-[#E4E9F0]">
-                        Lean Six Sigma MBB
+                      <span className="px-2.5 py-1 rounded bg-[#F8F9FA] border border-[#E5E7EB]">
+                        Especialista em ERPs
                       </span>
-                      <span className="px-2.5 py-1 rounded bg-[#F5F7FA] border border-[#E4E9F0]">
-                        Ex-Diretor Operações
+                      <span className="px-2.5 py-1 rounded bg-[#F8F9FA] border border-[#E5E7EB]">
+                        Power BI & Automação
+                      </span>
+                      <span className="px-2.5 py-1 rounded bg-[#F8F9FA] border border-[#E5E7EB]">
+                        Soluções Web
                       </span>
                     </div>
                   </div>
@@ -268,136 +293,152 @@ export default function Index() {
         </section>
 
         {/* =========================================================
-            SEÇÃO 4: SERVIÇOS (id="servicos")
+            SEÇÃO 4: SERVIÇOS / ÁREAS DE ATUAÇÃO (id="servicos")
+            Requisitos:
+            - Remover Gestão de Projetos
+            - Incluir Consultoria de Seleção de ERP em destaque entre os primeiros
+            - Incluir Desenvolvimento de Soluções Web
+            - Em Gestão de Indicadores incluir "criação de capacidade de medição"
+            - Sem jargões de consultoria
         ========================================================= */}
-        <section id="servicos" className="py-20 lg:py-28 bg-white border-y border-[#E4E9F0]">
+        <section id="servicos" className="py-20 lg:py-28 bg-white border-y border-[#E5E7EB]">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-xs font-bold uppercase tracking-wider text-[#00B4D8] border border-blue-100">
-                Soluções Especializadas
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-xs font-bold uppercase tracking-wider text-[#F58220] border border-orange-200">
+                Especialidades & Serviços
               </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0F2A43]">
-                Serviços de Consultoria para cada Fase da sua Operação
+              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B]">
+                Áreas de Atuação
               </h2>
-              <p className="text-base text-[#5B6B7C]">
-                Da identificação dos gargalos à automação com inteligência analítica, oferecemos
-                soluções completas para impulsionar a maturidade da sua gestão.
+              <p className="text-base text-[#52525B]">
+                Estruturamos métodos, ferramentas e capacitação sob medida para fortalecer os
+                pilares operacionais da sua organização.
               </p>
             </div>
 
-            {/* Grid de 6 cards com elevação e hover */}
+            {/* Grid de 6 cards de serviços alinhados com o site oficial da Berra */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Card 1 */}
-              <div className="bg-white rounded-xl border border-[#E4E9F0] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+              {/* Card 1: Consultoria de Processos */}
+              <div className="bg-white rounded-xl border border-[#E5E7EB] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#00B4D8] group-hover:bg-[#0F2A43] group-hover:text-white flex items-center justify-center transition-colors">
-                    <GitFork className="w-6 h-6 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
+                    <GitFork className="w-6 h-6 stroke-[1.75]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors">
-                    Mapeamento de Processos
+                  <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
+                    Consultoria de Processos
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Documentação completa no formato AS-IS com modelagem BPMN rigorosa,
-                    identificando responsabilidades, pontos cegos e desperdícios operacionais.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Mapeamento de como o trabalho funciona hoje, diagnóstico de gargalos e desenho
+                    do processo ideal para eliminar retrabalho e desperdício. Do levantamento à
+                    implantação prática, com acompanhamento de resultados.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F5F7FA] text-xs font-semibold text-[#00B4D8] flex items-center gap-1 group-hover:underline">
-                  Ver detalhes do escopo <ArrowRight className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
+                  Conversar sobre processos <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
-              {/* Card 2 */}
-              <div className="bg-white rounded-xl border border-[#E4E9F0] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+              {/* Card 2: Consultoria de Seleção de ERP (Destaque Solicitado) */}
+              <div className="bg-white rounded-xl border-2 border-[#F58220] p-7 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-[#F58220] text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-bl-lg">
+                  Destaque
+                </div>
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-50 text-[#00B4D8] group-hover:bg-[#0F2A43] group-hover:text-white flex items-center justify-center transition-colors">
-                    <Zap className="w-6 h-6 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-orange-100 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
+                    <Database className="w-6 h-6 stroke-[1.75]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors">
-                    Otimização e Redesenho
+                  <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
+                    Consultoria de Seleção de ERP
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Construção do modelo TO-BE com eliminação de redundâncias, redução drástica de
-                    Lead Time e simplificação de etapas manuais que travam as entregas.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Apoio técnico e imparcial na escolha do sistema de gestão ideal para sua
+                    empresa. Levantamento criterioso de requisitos do negócio, comparação de
+                    fornecedores de software e especificação de aderência para evitar investimentos
+                    errados.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F5F7FA] text-xs font-semibold text-[#00B4D8] flex items-center gap-1 group-hover:underline">
-                  Ver detalhes do escopo <ArrowRight className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-orange-100 text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
+                  Avaliar seleção de sistema <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
-              {/* Card 3 */}
-              <div className="bg-white rounded-xl border border-[#E4E9F0] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+              {/* Card 3: Desenvolvimento de Soluções Web (Adicionado conforme pedido) */}
+              <div className="bg-white rounded-xl border border-[#E5E7EB] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#00A86B] group-hover:bg-[#0F2A43] group-hover:text-white flex items-center justify-center transition-colors">
-                    <BarChart3 className="w-6 h-6 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
+                    <Globe className="w-6 h-6 stroke-[1.75]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors">
-                    Gestão de Indicadores (KPIs)
+                  <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
+                    Desenvolvimento de Soluções Web
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Desenvolvimento de painéis executivos, definição de acordos de nível de serviço
-                    (SLA) e metodologia OKR para monitorar o ritmo real do negócio.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Sistemas e ferramentas sob medida que conectam o processo ao digital. Soluções
+                    pensadas para a realidade da sua operação, sem complexidade desnecessária,
+                    resolvendo lacunas entre sistemas existentes.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F5F7FA] text-xs font-semibold text-[#00B4D8] flex items-center gap-1 group-hover:underline">
-                  Ver detalhes do escopo <ArrowRight className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
+                  Conhecer soluções digitais <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
-              {/* Card 4 */}
-              <div className="bg-white rounded-xl border border-[#E4E9F0] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+              {/* Card 4: Gestão de Indicadores e Dashboards (Com "criação de capacidade de medição") */}
+              <div className="bg-white rounded-xl border border-[#E5E7EB] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 group-hover:bg-[#0F2A43] group-hover:text-white flex items-center justify-center transition-colors">
-                    <Bot className="w-6 h-6 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
+                    <BarChart3 className="w-6 h-6 stroke-[1.75]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors">
-                    Automação & Transformação Digital
+                  <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
+                    Gestão de Indicadores e Dashboards
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Integração de ferramentas no-code, RPA e softwares legados para automatizar
-                    tarefas repetitivas e garantir a fluidez dos dados entre departamentos.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Foco na <strong>criação de capacidade de medição</strong>: definição de
+                    indicadores claros de desempenho, painéis visuais e monitoramento contínuo para
+                    apoiar decisões estratégicas com base em dados confiáveis.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F5F7FA] text-xs font-semibold text-[#00B4D8] flex items-center gap-1 group-hover:underline">
-                  Ver detalhes do escopo <ArrowRight className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
+                  Criar capacidade de medição <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
-              {/* Card 5 */}
-              <div className="bg-white rounded-xl border border-[#E4E9F0] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+              {/* Card 5: Automações Administrativas e Comerciais */}
+              <div className="bg-white rounded-xl border border-[#E5E7EB] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 group-hover:bg-[#0F2A43] group-hover:text-white flex items-center justify-center transition-colors">
-                    <Kanban className="w-6 h-6 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
+                    <Bot className="w-6 h-6 stroke-[1.75]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors">
-                    Gestão de Projetos
+                  <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
+                    Automação de Processos
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Governança PMO e implantação de pipelines ágeis (Scrum/Kanban) para garantir que
-                    iniciativas estratégicas sejam entregues no prazo e no orçamento.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Rotinas repetitivas executadas automaticamente, reduzindo erros manuais e
+                    liberando o time para o que realmente importa. Automação inteligente aplicada
+                    sobre processos previamente bem definidos.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F5F7FA] text-xs font-semibold text-[#00B4D8] flex items-center gap-1 group-hover:underline">
-                  Ver detalhes do escopo <ArrowRight className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
+                  Ver automações possíveis <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
-              {/* Card 6 */}
-              <div className="bg-white rounded-xl border border-[#E4E9F0] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+              {/* Card 6: Treinamento e Procedimentos Operacionais */}
+              <div className="bg-white rounded-xl border border-[#E5E7EB] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-[#0F2A43] group-hover:text-white flex items-center justify-center transition-colors">
-                    <GraduationCap className="w-6 h-6 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
+                    <GraduationCap className="w-6 h-6 stroke-[1.75]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#0F2A43] group-hover:text-[#00B4D8] transition-colors">
-                    Treinamento e Capacitação
+                  <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
+                    Treinamento & Padronização
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Workshops práticos para lideranças e equipes operacionais, desenvolvendo uma
-                    cultura interna sólida de melhoria contínua e foco no cliente.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Capacitação prática para que a equipe domine os novos métodos e rotinas. Criação
+                    de procedimentos claros, com responsabilidades e regras definidas. Menos
+                    dependência de memória e mais consistência na entrega.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F5F7FA] text-xs font-semibold text-[#00B4D8] flex items-center gap-1 group-hover:underline">
-                  Ver detalhes do escopo <ArrowRight className="w-3.5 h-3.5" />
+                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
+                  Capacitar equipe <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
             </div>
@@ -405,106 +446,110 @@ export default function Index() {
         </section>
 
         {/* =========================================================
-            SEÇÃO 5: PROCESSO (4 ETAPAS NUMERADAS)
+            SEÇÃO 5: COMO TRABALHAMOS (Jornada em 4 Etapas Sem Jargões)
         ========================================================= */}
-        <section id="processo" className="py-20 lg:py-28 bg-[#F5F7FA]">
+        <section id="processo" className="py-20 lg:py-28 bg-[#F8F9FA]">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-xs font-bold uppercase tracking-wider text-[#00B4D8] border border-blue-100">
-                Nossa Metodologia
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-xs font-bold uppercase tracking-wider text-[#F58220] border border-orange-200">
+                Nosso Método de Trabalho
               </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0F2A43]">
-                Jornada Estruturada em 4 Etapas
+              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B]">
+                Como Transformamos a Rotina da sua Empresa
               </h2>
-              <p className="text-base text-[#5B6B7C]">
-                Um passo a passo validado em mais de 120 empresas para garantir previsibilidade,
-                engajamento e retorno mensurável.
+              <p className="text-base text-[#52525B]">
+                Um ciclo estruturado e prático para garantir clareza, adesão da equipe e resultados
+                sustentáveis no dia a dia.
               </p>
             </div>
 
             {/* Linha do tempo de etapas (desktop alternado, mobile vertical) */}
             <div className="space-y-8 relative">
               {/* Linha vertical central decorativa (desktop) */}
-              <div className="hidden lg:block absolute left-1/2 top-8 bottom-8 w-0.5 bg-[#E4E9F0] -translate-x-1/2" />
+              <div className="hidden lg:block absolute left-1/2 top-8 bottom-8 w-0.5 bg-[#E5E7EB] -translate-x-1/2" />
 
-              {/* Etapa 01 */}
+              {/* Etapa 01: Entendimento e Diagnóstico */}
               <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="lg:text-right space-y-2 lg:pr-12">
-                  <span className="text-sm font-extrabold text-[#00B4D8] tracking-widest uppercase">
+                  <span className="text-sm font-extrabold text-[#F58220] tracking-widest uppercase">
                     Etapa 01
                   </span>
-                  <h3 className="text-xl font-bold text-[#0F2A43]">01. Diagnóstico</h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Imersão profunda na rotina da empresa, entrevistas com operadores e líderes,
-                    levantamento de dados históricos e identificação precisa dos gargalos
-                    operacionais e desperdícios financeiros.
+                  <h3 className="text-xl font-bold text-[#2B2B2B]">
+                    01. Entendimento da Rotina Atual
+                  </h3>
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Conversamos com quem executa o trabalho e com as lideranças para mapear como as
+                    tarefas realmente acontecem na prática. Identificamos onde o tempo se perde, os
+                    pontos de atrito e as dores mais urgentes.
                   </p>
                 </div>
                 <div className="hidden lg:flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#0F2A43] text-[#00B4D8] font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 -ml-[50%]">
+                  <div className="w-12 h-12 rounded-full bg-[#2B2B2B] text-[#F58220] font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 -ml-[50%]">
                     01
                   </div>
                 </div>
               </div>
 
-              {/* Etapa 02 */}
+              {/* Etapa 02: Desenho do Processo Ideal */}
               <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="hidden lg:flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#0F2A43] text-[#00B4D8] font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 ml-[50%]">
+                  <div className="w-12 h-12 rounded-full bg-[#2B2B2B] text-[#F58220] font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 ml-[50%]">
                     02
                   </div>
                 </div>
                 <div className="space-y-2 lg:pl-12">
-                  <span className="text-sm font-extrabold text-[#00B4D8] tracking-widest uppercase">
+                  <span className="text-sm font-extrabold text-[#F58220] tracking-widest uppercase">
                     Etapa 02
                   </span>
-                  <h3 className="text-xl font-bold text-[#0F2A43]">02. Análise e Plano de Ação</h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Modelagem dos fluxos futuros (TO-BE), definição de prioridades através de matriz
-                    de impacto versus esforço e elaboração do cronograma detalhado de execução com
-                    metas mensuráveis.
+                  <h3 className="text-xl font-bold text-[#2B2B2B]">
+                    02. Desenho do Processo Ideal
+                  </h3>
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Construímos uma rotina simplificada, sem passos inúteis e com papéis bem
+                    definidos. Priorizamos ações de maior ganho imediato e desenhamos fluxos fáceis
+                    de entender por qualquer colaborador.
                   </p>
                 </div>
               </div>
 
-              {/* Etapa 03 */}
+              {/* Etapa 03: Implantação e Tecnologia */}
               <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="lg:text-right space-y-2 lg:pr-12">
-                  <span className="text-sm font-extrabold text-[#00B4D8] tracking-widest uppercase">
+                  <span className="text-sm font-extrabold text-[#F58220] tracking-widest uppercase">
                     Etapa 03
                   </span>
-                  <h3 className="text-xl font-bold text-[#0F2A43]">03. Implementação</h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Execução lado a lado com os times: implantação dos novos procedimentos
-                    operacionais padrão (POPs), parametrização de ferramentas de automação e
-                    treinamento prático dos colaboradores.
+                  <h3 className="text-xl font-bold text-[#2B2B2B]">03. Implantação e Tecnologia</h3>
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Colocamos a nova rotina para rodar junto com os times: parametrização de
+                    sistemas, automações de rotinas repetitivas, desenvolvimento de ferramentas web
+                    de apoio e treinamento prático da equipe.
                   </p>
                 </div>
                 <div className="hidden lg:flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#0F2A43] text-[#00B4D8] font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 -ml-[50%]">
+                  <div className="w-12 h-12 rounded-full bg-[#2B2B2B] text-[#F58220] font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 -ml-[50%]">
                     03
                   </div>
                 </div>
               </div>
 
-              {/* Etapa 04 */}
+              {/* Etapa 04: Capacidade de Medição e Sustentação */}
               <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="hidden lg:flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#00A86B] text-white font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 ml-[50%]">
+                  <div className="w-12 h-12 rounded-full bg-[#10B981] text-white font-black text-base flex items-center justify-center border-4 border-white shadow-md z-10 ml-[50%]">
                     04
                   </div>
                 </div>
                 <div className="space-y-2 lg:pl-12">
-                  <span className="text-sm font-extrabold text-[#00A86B] tracking-widest uppercase">
+                  <span className="text-sm font-extrabold text-[#10B981] tracking-widest uppercase">
                     Etapa 04
                   </span>
-                  <h3 className="text-xl font-bold text-[#0F2A43]">
-                    04. Monitoramento e Melhoria Contínua
+                  <h3 className="text-xl font-bold text-[#2B2B2B]">
+                    04. Criação de Capacidade de Medição
                   </h3>
-                  <p className="text-sm text-[#5B6B7C] leading-relaxed">
-                    Acompanhamento sistemático dos KPIs em tempo real, auditorias periódicas de
-                    conformidade e ajustes finos para garantir a perpetuação dos resultados e o
-                    ciclo Kaizen.
+                  <p className="text-sm text-[#52525B] leading-relaxed">
+                    Estabelecemos indicadores confiáveis e painéis de acompanhamento visual. Com
+                    números reais em mãos, a liderança toma decisões rápidas e a melhoria se torna
+                    um hábito permanente da empresa.
                   </p>
                 </div>
               </div>
@@ -513,114 +558,84 @@ export default function Index() {
         </section>
 
         {/* =========================================================
-            SEÇÃO 6: RESULTADOS (DEPOIMENTOS)
+            SEÇÃO 6: O QUE DIZEM NOSSOS CLIENTES (Depoimentos Reais do site da Berra)
         ========================================================= */}
-        <section id="resultados" className="py-20 lg:py-28 bg-white border-y border-[#E4E9F0]">
+        <section id="resultados" className="py-20 lg:py-28 bg-white border-y border-[#E5E7EB]">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-xs font-bold uppercase tracking-wider text-[#00B4D8] border border-blue-100">
-                Histórias de Sucesso
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-xs font-bold uppercase tracking-wider text-[#F58220] border border-orange-200">
+                Resultados Reais
               </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0F2A43]">
-                O que Nossos Clientes Dizem Sobre Nós
+              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B]">
+                O que dizem nossos clientes
               </h2>
-              <p className="text-base text-[#5B6B7C]">
-                Empresas que transformaram suas operações e escalaram seus negócios com a
-                metodologia da Vértice.
+              <p className="text-base text-[#52525B]">
+                Empresas que conquistaram mais produtividade, governança e clareza na execução de
+                suas equipes.
               </p>
             </div>
 
-            {/* 3 cards de depoimentos realistas */}
+            {/* Cards com os depoimentos reais do site berra.com.br */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Depoimento 1 */}
-              <div className="bg-[#F5F7FA] rounded-2xl p-7 border border-[#E4E9F0] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              {/* Depoimento 1 - Marcos T. */}
+              <div className="bg-[#F8F9FA] rounded-2xl p-7 border border-[#E5E7EB] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1 text-amber-500">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400" />
-                      ))}
-                    </div>
-                    <Quote className="w-6 h-6 text-[#00B4D8]/30" />
-                  </div>
-                  <p className="text-sm text-[#1A2B3C] italic leading-relaxed">
-                    “O redesenho dos fluxos logísticos reduziu nosso tempo de expedição em 43% já no
-                    terceiro mês. A equipe da Vértice tem uma capacidade rara de traduzir
-                    complexidade em rotinas simples.”
+                  <div className="text-3xl font-serif text-[#F58220] leading-none">“</div>
+                  <p className="text-sm text-[#2B2B2B] italic leading-relaxed">
+                    “A Berra entendeu rapidamente nossa operação e organizou processos que dependiam
+                    há anos de pessoas específicas. Hoje temos clareza de quem faz o quê.”
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-[#E4E9F0] flex items-center gap-3">
-                  <img
-                    src="https://img.usecurling.com/ppl/medium?gender=male&seed=15"
-                    alt="Marcelo Albuquerque"
-                    className="w-12 h-12 rounded-full object-cover border border-[#E4E9F0]"
-                  />
+                <div className="pt-6 mt-6 border-t border-[#E5E7EB] flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-[#2B2B2B] text-white font-bold flex items-center justify-center text-sm">
+                    MT
+                  </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#0F2A43]">Marcelo Albuquerque</h4>
-                    <p className="text-xs text-[#5B6B7C]">Diretor de Operações — LogMax S.A.</p>
+                    <h4 className="text-sm font-bold text-[#2B2B2B]">Marcos T.</h4>
+                    <p className="text-xs text-[#52525B]">Diretor Industrial</p>
                   </div>
                 </div>
               </div>
 
-              {/* Depoimento 2 */}
-              <div className="bg-[#F5F7FA] rounded-2xl p-7 border border-[#E4E9F0] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              {/* Depoimento 2 - Renata S. */}
+              <div className="bg-[#F8F9FA] rounded-2xl p-7 border border-[#E5E7EB] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1 text-amber-500">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400" />
-                      ))}
-                    </div>
-                    <Quote className="w-6 h-6 text-[#00B4D8]/30" />
-                  </div>
-                  <p className="text-sm text-[#1A2B3C] italic leading-relaxed">
-                    “Antes da consultoria, nosso processo de compras e faturamento era um campo
-                    minado de retrabalho. A padronização e automação trouxeram clareza e
-                    economizaram centenas de horas operacionais.”
+                  <div className="text-3xl font-serif text-[#F58220] leading-none">“</div>
+                  <p className="text-sm text-[#2B2B2B] italic leading-relaxed">
+                    “Com as automações, reduzimos o tempo gasto em tarefas administrativas e
+                    ganhamos controle sobre o que antes vivia em planilhas soltas.”
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-[#E4E9F0] flex items-center gap-3">
-                  <img
-                    src="https://img.usecurling.com/ppl/medium?gender=female&seed=28"
-                    alt="Fernanda Castilho"
-                    className="w-12 h-12 rounded-full object-cover border border-[#E4E9F0]"
-                  />
+                <div className="pt-6 mt-6 border-t border-[#E5E7EB] flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-[#F58220] text-white font-bold flex items-center justify-center text-sm">
+                    RS
+                  </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#0F2A43]">Fernanda Castilho</h4>
-                    <p className="text-xs text-[#5B6B7C]">CFO — Rede Farmavida</p>
+                    <h4 className="text-sm font-bold text-[#2B2B2B]">Renata S.</h4>
+                    <p className="text-xs text-[#52525B]">Gerente Comercial</p>
                   </div>
                 </div>
               </div>
 
-              {/* Depoimento 3 */}
-              <div className="bg-[#F5F7FA] rounded-2xl p-7 border border-[#E4E9F0] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+              {/* Depoimento 3 - Paula M. */}
+              <div className="bg-[#F8F9FA] rounded-2xl p-7 border border-[#E5E7EB] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1 text-amber-500">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400" />
-                      ))}
-                    </div>
-                    <Quote className="w-6 h-6 text-[#00B4D8]/30" />
-                  </div>
-                  <p className="text-sm text-[#1A2B3C] italic leading-relaxed">
-                    “A gestão por indicadores implementada nos deu previsibilidade pela primeira vez
-                    na história da empresa. Hoje tomamos decisões estratégicas baseadas em dados em
-                    tempo real, sem achismos.”
+                  <div className="text-3xl font-serif text-[#F58220] leading-none">“</div>
+                  <p className="text-sm text-[#2B2B2B] italic leading-relaxed">
+                    “Treinamento objetivo e aplicável. A equipe saiu sabendo exatamente como
+                    executar o novo procedimento, sem resistência.”
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-[#E4E9F0] flex items-center gap-3">
-                  <img
-                    src="https://img.usecurling.com/ppl/medium?gender=male&seed=39"
-                    alt="Eduardo Prado"
-                    className="w-12 h-12 rounded-full object-cover border border-[#E4E9F0]"
-                  />
+                <div className="pt-6 mt-6 border-t border-[#E5E7EB] flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-[#2B2B2B] text-white font-bold flex items-center justify-center text-sm">
+                    PM
+                  </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#0F2A43]">Eduardo Prado</h4>
-                    <p className="text-xs text-[#5B6B7C]">CEO — Nexus Cloud Technologies</p>
+                    <h4 className="text-sm font-bold text-[#2B2B2B]">Paula M.</h4>
+                    <p className="text-xs text-[#52525B]">Coordenadora de RH</p>
                   </div>
                 </div>
               </div>
@@ -629,20 +644,20 @@ export default function Index() {
         </section>
 
         {/* =========================================================
-            SEÇÃO 7: CAPTURA DE LEADS (id="contato")
+            SEÇÃO 7: FALE CONOSCO / DIAGNÓSTICO (id="contato")
         ========================================================= */}
-        <section id="contato" className="py-20 lg:py-28 bg-[#F5F7FA] relative">
+        <section id="contato" className="py-20 lg:py-28 bg-[#F8F9FA] relative">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div className="text-center max-w-2xl mx-auto space-y-4 mb-12">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-xs font-bold uppercase tracking-wider text-[#00B4D8] border border-blue-100">
-                Comece Agora
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-xs font-bold uppercase tracking-wider text-[#F58220] border border-orange-200">
+                Primeiro Passo
               </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0F2A43]">
-                Dê o Primeiro Passo Rumo à Alta Performance
+              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B]">
+                Fale Conosco
               </h2>
-              <p className="text-base text-[#5B6B7C]">
-                Agende uma conversa preliminar com nosso consultor sênior. Avaliaremos o cenário
-                atual dos seus processos e apresentaremos oportunidades concretas de otimização.
+              <p className="text-base text-[#52525B]">
+                Conte-nos sobre o momento da sua empresa. Vamos entender seus desafios e avaliar
+                como podemos tornar seus processos mais eficientes.
               </p>
             </div>
 

@@ -125,7 +125,7 @@ export default function LeadDetailModal({
           <div className="flex items-center gap-3">
             <div
               className="w-3.5 h-3.5 rounded-full"
-              style={{ backgroundColor: STATUS_COLORS[status]?.border || '#00B4D8' }}
+              style={{ backgroundColor: STATUS_COLORS[status]?.border || '#F58220' }}
             />
             <div>
               <h2 className="text-lg font-bold text-[#0F2A43] leading-none">Detalhes do Lead</h2>
@@ -316,16 +316,16 @@ export default function LeadDetailModal({
               type="submit"
               form="lead-edit-form"
               disabled={saving}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold text-white bg-[#0F2A43] hover:bg-[#0A1F33] transition-all shadow-sm disabled:opacity-60"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold text-white bg-[#F58220] hover:bg-[#E06F12] transition-all shadow-sm disabled:opacity-60"
             >
               {saving ? (
                 <>
-                  <Loader2 className="w-3.5 h-3.5 animate-spin text-[#00B4D8]" />
+                  <Loader2 className="w-3.5 h-3.5 animate-spin text-white" />
                   <span>Salvando...</span>
                 </>
               ) : (
                 <>
-                  <Save className="w-3.5 h-3.5 text-[#00B4D8]" />
+                  <Save className="w-3.5 h-3.5 text-white" />
                   <span>Salvar Alterações</span>
                 </>
               )}

@@ -61,10 +61,10 @@ export const STATUS_COLORS: Record<
   { badge: string; border: string; bg: string; text: string }
 > = {
   Novo: {
-    badge: 'bg-blue-50 text-blue-700 border-blue-200',
-    border: '#00B4D8',
-    bg: '#EBF8FA',
-    text: '#007A94',
+    badge: 'bg-orange-50 text-orange-700 border-orange-200',
+    border: '#F58220',
+    bg: '#FFF7ED',
+    text: '#C2410C',
   },
   'Contato Realizado': {
     badge: 'bg-indigo-50 text-indigo-700 border-indigo-200',
@@ -86,9 +86,9 @@ export const STATUS_COLORS: Record<
   },
   Fechado: {
     badge: 'bg-emerald-50 text-emerald-700 border-emerald-200',
-    border: '#00A86B',
+    border: '#10B981',
     bg: '#ECFDF5',
-    text: '#00875A',
+    text: '#047857',
   },
   Perdido: {
     badge: 'bg-rose-50 text-rose-700 border-rose-200',
