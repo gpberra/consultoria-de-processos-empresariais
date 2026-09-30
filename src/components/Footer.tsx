@@ -79,7 +79,7 @@ export default function Footer() {
                   href="/#contato"
                   className="text-[#F58220] hover:underline font-semibold flex items-center gap-1"
                 >
-                  Solicitar Diagnóstico
+                  Agendar Conversa
                 </a>
               </li>
             </ul>
@@ -101,7 +101,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F58220]" />
-                Desenvolvimento de Soluções Web
+                Desenvolvimento de Apps Personalizados e Soluções Web
               </li>
               <li className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F58220]" />

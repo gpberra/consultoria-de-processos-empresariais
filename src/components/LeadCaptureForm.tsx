@@ -102,11 +102,11 @@ export default function LeadCaptureForm() {
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="space-y-1 text-left">
             <h3 className="text-2xl font-extrabold text-[#2B2B2B] tracking-tight">
-              Solicitar Diagnóstico
+              Agende uma Conversa com nossos Especialistas
             </h3>
             <p className="text-sm text-[#52525B]">
-              Preencha os dados abaixo para receber uma análise preliminar da maturidade dos
-              processos da sua empresa.
+              Preencha os dados abaixo para alinharmos seus desafios e entendermos as oportunidades
+              de melhoria nos processos da sua empresa.
             </p>
           </div>
           {serverError && (
@@ -261,7 +261,7 @@ export default function LeadCaptureForm() {
                 </>
               ) : (
                 <>
-                  <span>Solicitar Diagnóstico Gratuito</span>
+                  <span>Agendar Conversa</span>
                   <Send className="w-4 h-4 text-white" />
                 </>
               )}

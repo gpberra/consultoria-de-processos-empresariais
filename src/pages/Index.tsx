@@ -71,17 +71,11 @@ export default function Index() {
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <a
-                  href="#contato"
+                  href="#servicos"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-[#F58220]/25"
                 >
-                  Agende uma Consulta
+                  Conhecer Nossos Serviços
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-                <a
-                  href="#servicos"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-white/5 border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all"
-                >
-                  Conheça Nossas Áreas
                 </a>
               </div>
 
@@ -254,11 +248,15 @@ export default function Index() {
                   <div className="mt-6 pt-5 border-t border-[#E5E7EB] space-y-3">
                     <p className="text-xs text-[#52525B] leading-relaxed">
                       Profissional certificado com mais de 15 anos de atuação prática em gestão e
-                      operações. Atuou como delegado regional da associação internacional de
-                      profissionais de processos e já liderou mais de 30 grandes projetos de
-                      otimização de rotinas, integração de sistemas e tecnologia analítica.
+                      operações. <strong>Certificado CBPP pela ABPMP International</strong>, atuou
+                      como delegado regional da associação internacional de profissionais de
+                      processos e já liderou mais de 30 grandes projetos de otimização de rotinas,
+                      integração de sistemas e tecnologia analítica.
                     </p>
                     <div className="flex flex-wrap gap-2 pt-1 text-[11px] font-medium text-[#2B2B2B]">
+                      <span className="px-2.5 py-1 rounded bg-orange-50 border border-orange-200 text-[#F58220] font-semibold">
+                        Certificado CBPP® (ABPMP)
+                      </span>
                       <span className="px-2.5 py-1 rounded bg-[#F8F9FA] border border-[#E5E7EB]">
                         +15 Anos em Operações
                       </span>
@@ -349,14 +347,14 @@ export default function Index() {
                 </div>
               </div>
 
-              {/* Card 3: Desenvolvimento de Soluções Web (Adicionado conforme pedido) */}
+              {/* Card 3: Desenvolvimento de Apps Personalizados e Soluções Web */}
               <div className="bg-white rounded-xl border border-[#E5E7EB] p-7 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
                   <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#F58220] group-hover:bg-[#2B2B2B] group-hover:text-white flex items-center justify-center transition-colors">
                     <Globe className="w-6 h-6 stroke-[1.75]" />
                   </div>
                   <h3 className="text-lg font-bold text-[#2B2B2B] group-hover:text-[#F58220] transition-colors">
-                    Desenvolvimento de Soluções Web
+                    Desenvolvimento de Apps Personalizados e Soluções Web
                   </h3>
                   <p className="text-sm text-[#52525B] leading-relaxed">
                     Sistemas e ferramentas sob medida que conectam o processo ao digital. Soluções
@@ -640,11 +638,11 @@ export default function Index() {
                 Primeiro Passo
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B]">
-                Fale Conosco
+                Agende uma Conversa com nossos Especialistas
               </h2>
               <p className="text-base text-[#52525B]">
                 Conte-nos sobre o momento da sua empresa. Vamos entender seus desafios e avaliar
-                como podemos tornar seus processos mais eficientes.
+                como desenhar processos mais eficientes e escaláveis para a sua operação.
               </p>
             </div>
 

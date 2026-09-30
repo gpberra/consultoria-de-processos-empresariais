@@ -26,7 +26,11 @@ export default function Header() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         {/* Logotipo Berra */}
         <Link to="/" className="flex items-center group">
-          <BerraLogo theme="light" variant="full" />
+          <BerraLogo
+            theme="light"
+            variant="full"
+            imageClassName="h-11 sm:h-12 md:h-13 w-auto max-w-[280px] object-contain select-none transition-transform group-hover:scale-[1.02]"
+          />
         </Link>
 
         {/* Navegação Desktop */}

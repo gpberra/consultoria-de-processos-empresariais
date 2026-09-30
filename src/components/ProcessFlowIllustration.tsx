@@ -175,29 +175,29 @@ export default function ProcessFlowIllustration() {
         {/* NÓ 3: Indicadores & Resultados (estável) */}
         <g filter="url(#berra-shadow)">
           <rect
-            x="285"
+            x="270"
             y="360"
-            width="168"
+            width="200"
             height="66"
             rx="12"
             fill="white"
             stroke="#10B981"
             strokeWidth="2"
           />
-          <rect x="297" y="377" width="32" height="32" rx="8" fill="#ECFDF5" />
+          <rect x="280" y="377" width="32" height="32" rx="8" fill="#ECFDF5" />
           {/* Check / seta de subida */}
           <path
-            d="M 305 396 L 311 401 L 321 387"
+            d="M 288 396 L 294 401 L 304 387"
             fill="none"
             stroke="#10B981"
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <text x="339" y="389" fill="#2B2B2B" fontSize="13" fontWeight="700">
+          <text x="320" y="389" fill="#2B2B2B" fontSize="13" fontWeight="700">
             Medição Real
           </text>
-          <text x="339" y="403" fill="#10B981" fontSize="11" fontWeight="600">
+          <text x="320" y="403" fill="#10B981" fontSize="10.5" fontWeight="600">
             + Eficiência e Clareza
           </text>
         </g>

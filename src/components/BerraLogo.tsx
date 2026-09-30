@@ -15,8 +15,10 @@ interface BerraLogoProps {
    * 'icon-only' -> apenas símbolo
    */
   variant?: 'full' | 'compact' | 'icon-only'
-  /** Altura da imagem do logotipo / ícone */
+  /** Classes adicionais para o container ou wrapper */
   className?: string
+  /** Classes CSS aplicadas diretamente na imagem do logotipo */
+  imageClassName?: string
   /** Se deve usar o asset de imagem PNG original em vez do SVG vetorial */
   useImage?: boolean
 }
@@ -30,6 +32,7 @@ export default function BerraLogo({
   theme = 'light',
   variant = 'compact',
   className = '',
+  imageClassName = '',
 }: BerraLogoProps) {
   // Se variant for apenas o ícone
   if (variant === 'icon-only') {
@@ -63,7 +66,7 @@ export default function BerraLogo({
       <img
         src={logoFull}
         alt="Berra - Análise e Otimização de Processos de Negócio"
-        className="h-9 md:h-10 w-auto max-w-[220px] object-contain select-none"
+        className={imageClassName || 'h-9 md:h-10 w-auto max-w-[220px] object-contain select-none'}
       />
     </div>
   )
