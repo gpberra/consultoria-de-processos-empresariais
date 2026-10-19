@@ -60,7 +60,7 @@ export default function BerraLogo({
     )
   }
 
-  // Fundo claro padrão (Header, Login, Pipeline, Modais, etc.)
+  // Fundo claro padrão (Header, Seções claras, etc.)
   return (
     <div className={`inline-flex items-center shrink-0 ${className}`}>
       <img

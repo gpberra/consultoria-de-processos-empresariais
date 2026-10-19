@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, ArrowRight, ShieldCheck, ChevronRight } from 'lucide-react'
-import { useAuth } from '@/context/AuthContext'
+import { Menu, X, ChevronRight } from 'lucide-react'
 import BerraLogo from '@/components/BerraLogo'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { isAuthenticated } = useAuth()
   const location = useLocation()
   const isHomePage = location.pathname === '/'
 
@@ -45,29 +43,23 @@ export default function Header() {
             </a>
           ))}
 
-          {isAuthenticated ? (
-            <Link
-              to="/pipeline"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-orange-50 text-xs font-semibold text-[#2B2B2B] border border-orange-200 hover:bg-orange-100 transition-colors"
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-[#F58220]" />
-              Área Restrita (Pipeline)
-            </Link>
-          ) : (
-            <Link
-              to="/login"
-              className="text-xs font-semibold text-[#52525B] hover:text-[#2B2B2B] transition-colors"
-            >
-              Acesso Consultor
-            </Link>
-          )}
-
           <a
-            href={isHomePage ? '#contato' : '/#contato'}
-            className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-sm"
+            href="https://wa.me/5554991548401"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-sm"
           >
-            Fale Conosco
-            <ArrowRight className="w-4 h-4 ml-1.5 text-white" />
+            {/* Ícone de WhatsApp */}
+            <svg
+              className="w-4 h-4 fill-current"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.201.3-.778.978-.954 1.179-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.799-1.5-1.786-1.676-2.087-.176-.301-.019-.464.132-.614.135-.135.301-.351.452-.527.151-.176.201-.301.301-.502.1-.2.05-.376-.025-.527-.075-.15-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.176-.009-.376-.01-.577-.01s-.527.075-.803.376c-.276.3-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.151.2 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.722.23 1.379.197 1.9.12.58-.087 1.78-.728 2.03-1.431.251-.703.251-1.305.176-1.431-.076-.126-.277-.201-.578-.351z" />
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.892.527 3.662 1.446 5.175L2 22l4.981-1.408A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.15 8.15 0 0 1-4.16-1.134l-.298-.177-2.96.837.842-2.885-.195-.31A8.167 8.167 0 0 1 3.8 12c0-4.522 3.678-8.2 8.2-8.2 4.522 0 8.2 3.678 8.2 8.2 0 4.522-3.678 8.2-8.2 8.2z" />
+            </svg>
+            <span>Fale Conosco</span>
           </a>
         </nav>
 
@@ -104,36 +96,27 @@ export default function Header() {
                     <ChevronRight className="w-4 h-4 text-[#52525B]" />
                   </a>
                 ))}
-
-                {isAuthenticated ? (
-                  <Link
-                    to="/pipeline"
-                    onClick={handleLinkClick}
-                    className="flex items-center gap-2 text-sm font-semibold text-[#2B2B2B] bg-orange-50 p-3 rounded-lg border border-orange-200"
-                  >
-                    <ShieldCheck className="w-4 h-4 text-[#F58220]" />
-                    Ir para o Pipeline
-                  </Link>
-                ) : (
-                  <Link
-                    to="/login"
-                    onClick={handleLinkClick}
-                    className="text-sm font-semibold text-[#52525B] hover:text-[#2B2B2B] py-2"
-                  >
-                    Acesso Consultor (Login)
-                  </Link>
-                )}
               </nav>
             </div>
 
             <div className="pt-6 border-t border-[#E5E7EB]">
               <a
-                href={isHomePage ? '#contato' : '/#contato'}
+                href="https://wa.me/5554991548401"
+                target="_blank"
+                rel="noreferrer"
                 onClick={handleLinkClick}
-                className="w-full inline-flex items-center justify-center px-5 py-3 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] shadow-md transition-all"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] shadow-md transition-all"
               >
-                Fale Conosco
-                <ArrowRight className="w-4 h-4 ml-2 text-white" />
+                <svg
+                  className="w-4 h-4 fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.201.3-.778.978-.954 1.179-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.799-1.5-1.786-1.676-2.087-.176-.301-.019-.464.132-.614.135-.135.301-.351.452-.527.151-.176.201-.301.301-.502.1-.2.05-.376-.025-.527-.075-.15-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.176-.009-.376-.01-.577-.01s-.527.075-.803.376c-.276.3-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.151.2 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.722.23 1.379.197 1.9.12.58-.087 1.78-.728 2.03-1.431.251-.703.251-1.305.176-1.431-.076-.126-.277-.201-.578-.351z" />
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 1.892.527 3.662 1.446 5.175L2 22l4.981-1.408A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.15 8.15 0 0 1-4.16-1.134l-.298-.177-2.96.837.842-2.885-.195-.31A8.167 8.167 0 0 1 3.8 12c0-4.522 3.678-8.2 8.2-8.2 4.522 0 8.2 3.678 8.2 8.2 0 4.522-3.678 8.2-8.2 8.2z" />
+                </svg>
+                <span>Fale Conosco</span>
               </a>
             </div>
           </div>

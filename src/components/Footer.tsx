@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, Linkedin, Clock, ArrowUpRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Clock } from 'lucide-react'
 import BerraLogo from '@/components/BerraLogo'
 
 export default function Footer() {
@@ -76,10 +75,12 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/#contato"
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-[#F58220] hover:underline font-semibold flex items-center gap-1"
                 >
-                  Agendar Conversa
+                  Fale Conosco (WhatsApp)
                 </a>
               </li>
             </ul>
@@ -159,13 +160,23 @@ export default function Footer() {
             </div>
 
             <div className="pt-2">
-              <Link
-                to="/login"
-                className="inline-flex items-center gap-1 text-xs text-neutral-400 hover:text-white transition-colors"
+              <a
+                href="https://wa.me/5554991548401"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white/10 hover:bg-[#F58220] text-xs font-semibold text-white transition-colors"
               >
-                Acesso Restrito ao Pipeline de Leads
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#F58220]" />
-              </Link>
+                <svg
+                  className="w-3.5 h-3.5 fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.201.3-.778.978-.954 1.179-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.799-1.5-1.786-1.676-2.087-.176-.301-.019-.464.132-.614.135-.135.301-.351.452-.527.151-.176.201-.301.301-.502.1-.2.05-.376-.025-.527-.075-.15-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.176-.009-.376-.01-.577-.01s-.527.075-.803.376c-.276.3-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.151.2 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.722.23 1.379.197 1.9.12.58-.087 1.78-.728 2.03-1.431.251-.703.251-1.305.176-1.431-.076-.126-.277-.201-.578-.351z" />
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 1.892.527 3.662 1.446 5.175L2 22l4.981-1.408A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.15 8.15 0 0 1-4.16-1.134l-.298-.177-2.96.837.842-2.885-.195-.31A8.167 8.167 0 0 1 3.8 12c0-4.522 3.678-8.2 8.2-8.2 4.522 0 8.2 3.678 8.2 8.2 0 4.522-3.678 8.2-8.2 8.2z" />
+                </svg>
+                Atendimento via WhatsApp
+              </a>
             </div>
           </div>
         </div>
@@ -177,11 +188,13 @@ export default function Footer() {
             reservados.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#contato" className="hover:text-white transition-colors">
-              Termos de Uso
-            </a>
-            <a href="#contato" className="hover:text-white transition-colors">
-              Política de Privacidade
+            <a
+              href="https://wa.me/5554991548401"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Fale Conosco
             </a>
             <span className="text-neutral-600">|</span>
             <span className="text-neutral-400">Caxias do Sul / RS • Atendimento Nacional</span>

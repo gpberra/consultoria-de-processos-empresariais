@@ -19,7 +19,6 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import ProcessFlowIllustration from '@/components/ProcessFlowIllustration'
-import LeadCaptureForm from '@/components/LeadCaptureForm'
 
 export default function Index() {
   return (
@@ -71,11 +70,19 @@ export default function Index() {
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <a
-                  href="#servicos"
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-[#F58220] hover:bg-[#E06F12] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-[#F58220]/25"
                 >
-                  Conhecer Nossos Serviços
+                  Fale Conosco no WhatsApp
                   <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+                <a
+                  href="#servicos"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm font-semibold text-neutral-200 border border-neutral-700 hover:border-neutral-500 hover:text-white hover:bg-white/5 transition-all"
+                >
+                  Conhecer Nossos Serviços
                 </a>
               </div>
 
@@ -318,9 +325,14 @@ export default function Index() {
                     implantação prática, com acompanhamento de resultados.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
-                  Conversar sobre processos <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                <a
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 hover:underline"
+                >
+                  Conversar sobre processos no WhatsApp <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
 
               {/* Card 2: Consultoria de Seleção de ERP (Destaque Solicitado) */}
@@ -342,9 +354,14 @@ export default function Index() {
                     errados.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-orange-100 text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
-                  Avaliar seleção de sistema <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                <a
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pt-6 mt-6 border-t border-orange-100 text-xs font-semibold text-[#F58220] flex items-center gap-1 hover:underline"
+                >
+                  Avaliar seleção de sistema no WhatsApp <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
 
               {/* Card 3: Desenvolvimento de Apps Personalizados e Soluções Web */}
@@ -362,9 +379,14 @@ export default function Index() {
                     resolvendo lacunas entre sistemas existentes.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
-                  Conhecer soluções digitais <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                <a
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 hover:underline"
+                >
+                  Conhecer soluções digitais no WhatsApp <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
 
               {/* Card 4: Gestão de Indicadores e Dashboards (Com "criação de capacidade de medição") */}
@@ -382,9 +404,14 @@ export default function Index() {
                     apoiar decisões estratégicas com base em dados confiáveis.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
-                  Criar capacidade de medição <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                <a
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 hover:underline"
+                >
+                  Criar capacidade de medição no WhatsApp <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
 
               {/* Card 5: Automações Administrativas e Comerciais */}
@@ -402,9 +429,14 @@ export default function Index() {
                     sobre processos previamente bem definidos.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
-                  Ver automações possíveis <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                <a
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 hover:underline"
+                >
+                  Ver automações possíveis no WhatsApp <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
 
               {/* Card 6: Treinamento e Procedimentos Operacionais */}
@@ -422,9 +454,14 @@ export default function Index() {
                     dependência de memória e mais consistência na entrega.
                   </p>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 group-hover:underline">
-                  Capacitar equipe <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                <a
+                  href="https://wa.me/5554991548401"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pt-6 mt-6 border-t border-[#F8F9FA] text-xs font-semibold text-[#F58220] flex items-center gap-1 hover:underline"
+                >
+                  Capacitar equipe pelo WhatsApp <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
           </div>
@@ -629,24 +666,78 @@ export default function Index() {
         </section>
 
         {/* =========================================================
-            SEÇÃO 7: FALE CONOSCO / DIAGNÓSTICO (id="contato")
+            SEÇÃO 7: FALE CONOSCO / CONTATO DIRETO VIA WHATSAPP (id="contato")
         ========================================================= */}
-        <section id="contato" className="py-20 lg:py-28 bg-[#F8F9FA] relative">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
-            <div className="text-center max-w-2xl mx-auto space-y-4 mb-12">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-orange-50 text-xs font-bold uppercase tracking-wider text-[#F58220] border border-orange-200">
-                Primeiro Passo
-              </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#2B2B2B]">
-                Agende uma Conversa com nossos Especialistas
-              </h2>
-              <p className="text-base text-[#52525B]">
-                Conte-nos sobre o momento da sua empresa. Vamos entender seus desafios e avaliar
-                como desenhar processos mais eficientes e escaláveis para a sua operação.
-              </p>
-            </div>
+        <section
+          id="contato"
+          className="py-20 lg:py-28 bg-white border-t border-[#E5E7EB] relative"
+        >
+          <div className="max-w-[1000px] mx-auto px-4 sm:px-6">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2B2B2B] via-[#242424] to-[#1E1E1E] text-white p-8 sm:p-12 lg:p-16 shadow-2xl border border-neutral-700">
+              {/* Efeitos decorativos sutis */}
+              <div className="absolute top-0 right-0 w-80 h-80 bg-[#F58220]/15 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#F58220]/10 rounded-full blur-2xl pointer-events-none" />
 
-            <LeadCaptureForm />
+              <div className="relative z-10 text-center max-w-2xl mx-auto space-y-6">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-[#F58220]/40 text-xs font-semibold text-orange-400">
+                  <Sparkles className="w-3.5 h-3.5 text-[#F58220]" />
+                  Atendimento Direto & Rápido
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                  Vamos conversar sobre seus processos?
+                </h2>
+
+                <p className="text-base sm:text-lg text-neutral-300 leading-relaxed font-normal">
+                  Conte-nos sobre os desafios da sua operação. Atendemos diretamente pelo WhatsApp
+                  para entender suas necessidades, tirar dúvidas e avaliar as melhores oportunidades
+                  de otimização sem burocracia.
+                </p>
+
+                <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <a
+                    href="https://wa.me/5554991548401"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold text-white bg-[#F58220] hover:bg-[#E06F12] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl shadow-[#F58220]/30"
+                  >
+                    {/* Ícone de WhatsApp em SVG oficial */}
+                    <svg
+                      className="w-6 h-6 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.201.3-.778.978-.954 1.179-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.895-.799-1.5-1.786-1.676-2.087-.176-.301-.019-.464.132-.614.135-.135.301-.351.452-.527.151-.176.201-.301.301-.502.1-.2.05-.376-.025-.527-.075-.15-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.176-.009-.376-.01-.577-.01s-.527.075-.803.376c-.276.3-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.151.2 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.722.23 1.379.197 1.9.12.58-.087 1.78-.728 2.03-1.431.251-.703.251-1.305.176-1.431-.076-.126-.277-.201-.578-.351z" />
+                      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.892.527 3.662 1.446 5.175L2 22l4.981-1.408A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.15 8.15 0 0 1-4.16-1.134l-.298-.177-2.96.837.842-2.885-.195-.31A8.167 8.167 0 0 1 3.8 12c0-4.522 3.678-8.2 8.2-8.2 4.522 0 8.2 3.678 8.2 8.2 0 4.522-3.678 8.2-8.2 8.2z" />
+                    </svg>
+                    <span>Chamar no WhatsApp</span>
+                  </a>
+
+                  <div className="flex items-center gap-2 text-neutral-300 text-sm font-medium px-4 py-2.5 rounded-lg bg-white/5 border border-white/10">
+                    <span className="text-neutral-400">WhatsApp / Telefone:</span>
+                    <span className="text-white font-semibold tracking-wide">
+                      +55 54 99154-8401
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-neutral-700/60 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-neutral-300">
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#F58220] shrink-0" />
+                    <span>Retorno ágil</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#F58220] shrink-0" />
+                    <span>Conversa com consultores</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#F58220] shrink-0" />
+                    <span>Sem custo ou compromisso</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
